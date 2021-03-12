@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:id="@+id/playlistRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/playlistMenuImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_more"
+            android:layout_alignParentRight="true"/>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/playlistImagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/playlistMenuImageView"
+            app:columnCount="2">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+
+        <TextView
+            android:id="@+id/playlistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/playlistImagesContainer" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
